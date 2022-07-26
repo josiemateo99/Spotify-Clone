@@ -16,11 +16,13 @@ export async function middleware(req) {
     // 2) the token exists
 
     if (pathname.includes('/api/auth') || token) {
+        console.log("api/auth and token")
         return NextResponse.next()
     }
 
     // redirect to login page if the user is not logged in and they are requesting a protected routeing a protected route
     if (!token && pathname !== '/login') {
+        console.log("Log In Page")
         return NextResponse.redirect(url)
     }
 }
