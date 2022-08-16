@@ -18,9 +18,9 @@ function Sidebar() {
     const spotifyApi = useSpotify();
     const {data: session, status } = useSession();
     const [playlists, setPlaylists] = useState([]);
-    const [playlistID, setPlaylistID] = useState(null)
+    const [playlistId, setPlaylistID] = useState(null)
 
-    console.log('You Chose >>>', playlistID)
+    console.log('You Chose >>>', playlistId)
 
     useEffect(() => {
         if(spotifyApi.getAccessToken()){
