@@ -40,7 +40,7 @@ function Center() {
     //
     <div className="flex-grow">
         <header className="absolute top-5 right-8">
-            //User Icon Photo Div
+            
             <div className="flex items-center bg-red-300 space-x-3 opacity-90 hover:opacity-80 cursor-pointer rounded-full
             padding-1 pr-2">
                 <img className="rounded-full w-10 h-10" 
@@ -49,6 +49,7 @@ function Center() {
                 <h2>{session?.user.name}</h2>
                 <ChevronDoubleDownIcon className="h-5 w-5" />
             </div>
+
         </header>
 
         <section 
@@ -59,8 +60,18 @@ function Center() {
         src={playlist?.images?.[0]?.url} 
         alt="" 
         />
-        <h1> Hello World! </h1>
-        </section>
+
+        <div>
+
+            <p>PLAYLIST</p>
+            <h1 className="text-2xl md:text-3xl xl:text-5xl">
+                {playlist?.name}
+            </h1>
+
+        </div>
+       
+       </section>
+    
     </div>
   ) 
 }
