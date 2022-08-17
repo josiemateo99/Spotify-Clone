@@ -42,19 +42,19 @@ function Center() {
     <div className="flex-grow">
         <header className="absolute top-5 right-8">
             
-            <div className="flex items-center bg-red-300 space-x-3 opacity-90 hover:opacity-80 cursor-pointer rounded-full
-            padding-1 pr-2">
+            <div className="flex items-center bg-black space-x-3 opacity-90 hover:opacity-80 cursor-pointer rounded-full
+            padding-1 pr-2 text-white p-1">
                 <img className="rounded-full w-10 h-10" 
                 src={session?.user.image} alt="" />
 
                 <h2>{session?.user.name}</h2>
-                <ChevronDoubleDownIcon className="h-5 w-5" />
+                <ChevronDoubleDownIcon className="h-4 w-4" />
             </div>
 
         </header>
 
         <section 
-        className={`flex items-end space-x-7 bg-gradient-to-b to-black ${color} h-80 text-white padding-8`}>
+        className={`flex items-end space-x-7 bg-gradient-to-b to-black ${color} h-80 text-white p-8`}>
         
         <img 
         className="h-44 w-44 shadow-2xl"

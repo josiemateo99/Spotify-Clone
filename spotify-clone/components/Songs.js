@@ -1,14 +1,18 @@
 import React from "react";
+import { useRecoilValue } from "recoil";
+import { playlistState } from "../atoms/playlistAtom";
 
 function Songs() {
-  return(
+  const playlist = useRecoilValue(playlistState); 
 
-        <div>
-            
-        </div>
+  return (
+  <div className="text-white">
+    {playlist?.tracks.items.map((track) => (
+      <div>{track.track.name} </div>
+    ))}
 
-
-  )
+  </div>
+  );
 }
 
 export default Songs;
