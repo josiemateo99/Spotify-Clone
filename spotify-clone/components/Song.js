@@ -6,7 +6,7 @@ import { millisToMinutesAndSeconds } from "../lib/time";
 function Song({order, track}) {
     const spotifyApi = useSpotify();
 
-    return <div className="grid grid-cols-2">
+    return <div className="grid grid-cols-2 text-gray-500">
         <div className="flex items-center space-x-4">
             <p>{order+1}</p>
             <img 
@@ -14,7 +14,7 @@ function Song({order, track}) {
             src={track.track.album.images[0].url}/>
 
             <div>
-                <p>{track.track.name}</p>
+                <p className="w-36 lg:w-64 text-white truncate ">{track.track.name}</p>
                 <p>{track.track.artists[0].name}</p>
             </div>
         </div>
