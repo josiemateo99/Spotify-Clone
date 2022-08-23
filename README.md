@@ -4,3 +4,7 @@
 ## Needs to be finished// Challenging
 - **Middleware** 
   - Currently this function is commented out due to redirecting to a blank 'login' page.
+
+## Must Haves
+- **PREMIUM REQUIRED**
+  - Must need for Player View at bottom of screen to display Album cover, Song name and Artist Name
